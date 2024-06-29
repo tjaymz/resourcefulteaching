@@ -11,6 +11,10 @@ body {
   justify-content: center;
 }
 
+.homePg {
+  flex-direction: column;
+}
+
 .mainTop {
   flex-direction: column;
   align-items: center;
@@ -46,6 +50,10 @@ body {
 
 h1 {
   font-size: 30px;
+}
+
+.welcomeTitle {
+  margin: 0;
 }
 
 img {
