@@ -1,5 +1,7 @@
 {
     "videoIds": [
+      "JgfuGXlUI9k?si=znwYYLnH3YWjrmsm",
+      "1FO8BpvsAY4?si=qaGbjK_yHI0jjOMv",
       "2K6x0kgReyU?si=_1uAS9KPniOI-mVB",
       "8JgnSIhmyyM?si=zfZYweqx2yyTeysv",
       "wWsaitm2dDQ?si=v-FoalE2vXTZOQI9",
@@ -10,9 +12,7 @@
       "Kv8i1FVmhsA?si=x-SbLR7-dVP0EdIK",
       "xOHVbRqhi5Y?si=MqpfjBmfzDP3EYwC",
       "0Y9OZorc48w?si=8jKpfxt8ujvqJmQl",
-      "B_4A4cv3koo?si=mpcYW8ykjCZ_j68w",
-      "JgfuGXlUI9k?si=znwYYLnH3YWjrmsm",
-      "1FO8BpvsAY4?si=qaGbjK_yHI0jjOMv"
+      "B_4A4cv3koo?si=mpcYW8ykjCZ_j68w"
     ],
     "images": [
         "audio_concepts.jpeg",
@@ -40,4 +40,4 @@
         {"eOTYV7bioTL": "Double-O-Stem"},
         {"b8LuFvtUifG": "Turning Point"}
     ]
-  }
+  } 
