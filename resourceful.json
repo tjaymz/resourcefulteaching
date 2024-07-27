@@ -1,0 +1,41 @@
+{
+    "videos": [
+      "wWsaitm2dDQ?si=v-FoalE2vXTZOQI9",
+      "iiifeV1RIW8?si=ESFDzosGeHzzOW_J",
+      "Hwn_zPZ3VJk?si=Zah7jgSWKEuXd0E7",
+      "x4HhqMM2fhU?si=O7KqRdCJGsiU4pQo",
+      "DCJMv37AvdM?si=XdUbNenpKtzeJprC",
+      "Kv8i1FVmhsA?si=x-SbLR7-dVP0EdIK",
+      "xOHVbRqhi5Y?si=MqpfjBmfzDP3EYwC",
+      "0Y9OZorc48w?si=8jKpfxt8ujvqJmQl",
+      "B_4A4cv3koo?si=mpcYW8ykjCZ_j68w",
+      "JgfuGXlUI9k?si=znwYYLnH3YWjrmsm",
+      "1FO8BpvsAY4?si=qaGbjK_yHI0jjOMv"
+    ],
+    "images": [
+        "audio_concepts.jpeg",
+        "audio_concepts2.jpeg",
+        "grimms2disney.jpeg",
+        "LinkedIn-Blue-40.png",
+        "LinkedIn-Blue.png",
+        "RTLogo.png"
+    ],
+    "iframes": [
+        "whoIsAmyTrujillo",
+        "skyscraper",
+        "historyCenter360"
+    ],
+    "pages": [
+        {"/": "Home"},
+        {"about": "About"},
+        {"captivate": "Adobe Captivate"},
+        {"prezi": "Prezi"},
+        {"powtoon": "Powtoon"},
+        {"video": "Videos"},
+        {"projects": "Projects"}
+    ],
+    "powtoon": [
+        {"eOTYV7bioTL": "Double-O-Stem"},
+        {"b8LuFvtUifG": "Turning Point"}
+    ]
+  }
