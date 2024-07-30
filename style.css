@@ -1,7 +1,8 @@
 body {
   font-family: sans-serif;
   text-align: center;
-  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%) no-repeat;
+  /* background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%) no-repeat; */
+  background-color: rgba(0,212,255,1);
   height: 100vh;
 }
 
@@ -21,7 +22,7 @@ body {
 }
 
 .mainText {
-  background-color: gray;
+  /* background-color: gray; */
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -30,17 +31,23 @@ body {
 .mainTop,
 .mainText {
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.95);
+  /* background-color: rgba(255, 255, 255, 0.95); */
   /* backdrop-filter: saturate(180%) blur(10px); */
 }
 
-@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+.whoAmI {
+  margin: auto;
+  width: 778px;
+  height: 500px;
+}
+
+/* @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
   .mainTop {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.5); 
   }
-}
+} */
 
 .rtLogo {
   border-radius: 30%;
@@ -95,4 +102,11 @@ li a:hover:not(.active) {
 .soundCloud {
   display: flex;
   flex-direction: column;
+}
+
+.prezis,
+#myVideos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
 }

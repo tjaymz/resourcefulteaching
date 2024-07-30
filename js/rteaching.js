@@ -20,25 +20,40 @@ function showPage(pageName) {
 
 // Function to load videos dynamically
 function loadVideos() {
-  fetch('js/resourceful.json') // Assuming the JSON file is named resourceful.json
+  fetch('js/resourceful.json')
     .then(response => response.json())
     .then(data => {
       const videoContainer = document.getElementById('myVideos');
-      videoContainer.innerHTML = ''; // Clear existing content
+      videoContainer.innerHTML = ''; // Clear previous videos
+
       data.videoIds.forEach(videoId => {
-        const iframe = document.createElement('iframe');
-        iframe.width = "560";
-        iframe.height = "315";
-        iframe.src = `https://www.youtube.com/embed/${videoId}`;
-        iframe.title = "YouTube video player";
-        iframe.frameBorder = "0";
-        iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-        iframe.referrerPolicy = "strict-origin-when-cross-origin";
-        iframe.allowFullscreen = true;
+        const iframe = createYoutubeIframe(videoId); // Function to create iframes
         videoContainer.appendChild(iframe);
       });
+
+      // Add the videoTxt div
+      // const videoTxtDiv = document.createElement('div');
+      // videoTxtDiv.className = 'videoTxt';
+      // videoContainer.after(videoTxtDiv); // Simpler way to insert after
+
+      // const videoTxtContent = data.videoTxt.join('<br>'); // Join with line breaks
+      // videoTxtDiv.innerHTML = videoTxtContent; 
     });
 }
+
+function createYoutubeIframe(videoId) {
+  const iframe = document.createElement('iframe');
+  iframe.width = "560";
+  iframe.height = "315";
+  iframe.src = `https://www.youtube.com/embed/${videoId}`;
+  iframe.title = "YouTube video player";
+  iframe.frameBorder = "0";
+  iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+  iframe.referrerPolicy = "strict-origin-when-cross-origin";
+  iframe.allowFullscreen = true;
+  return iframe;
+}
+
 
 // Event listeners for navigation links
 document.querySelectorAll('#navLinks a').forEach(link => {
