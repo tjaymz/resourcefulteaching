@@ -15,6 +15,9 @@ function showPage(pageName) {
       if (pageName === 'video') {
         loadVideos();
       }
+
+      // 5. Update the URL hash
+      window.location.hash = pageName;
     });
 }
 
@@ -30,14 +33,6 @@ function loadVideos() {
         const iframe = createYoutubeIframe(videoId); // Function to create iframes
         videoContainer.appendChild(iframe);
       });
-
-      // Add the videoTxt div
-      // const videoTxtDiv = document.createElement('div');
-      // videoTxtDiv.className = 'videoTxt';
-      // videoContainer.after(videoTxtDiv); // Simpler way to insert after
-
-      // const videoTxtContent = data.videoTxt.join('<br>'); // Join with line breaks
-      // videoTxtDiv.innerHTML = videoTxtContent; 
     });
 }
 
@@ -54,7 +49,6 @@ function createYoutubeIframe(videoId) {
   return iframe;
 }
 
-
 // Event listeners for navigation links
 document.querySelectorAll('#navLinks a').forEach(link => {
   link.addEventListener('click', (event) => {
@@ -64,5 +58,14 @@ document.querySelectorAll('#navLinks a').forEach(link => {
   });
 });
 
-// Initial page load (show the home page)
-showPage('home');
+// Load the page based on the current hash or default to home
+window.addEventListener('load', () => {
+  const initialPage = window.location.hash.substring(1) || 'home';
+  showPage(initialPage);
+});
+
+// Handle hash change for direct navigation via URL
+window.addEventListener('hashchange', () => {
+  const pageName = window.location.hash.substring(1);
+  showPage(pageName);
+});
